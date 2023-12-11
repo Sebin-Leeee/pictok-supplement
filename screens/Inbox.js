@@ -10,13 +10,13 @@ export default function Inbox({ route }) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <StatusBar style="auto" />
-      <Text style={styles.welcomeText}>Welcome to PICTOK, {username}!</Text>
+      <Text style={styles.welcomeText} >Welcome to PICTOK, <Text style={styles.usernameText}>{username}</Text>!</Text>
       <Text style={styles.tap}>Tap to listen.</Text>
       <InboxImage />
       <UserLogOut style={styles.logOut}/>
     </ScrollView>
   );
-}
+} 
 
 const styles = StyleSheet.create({
   container: {
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   welcomeText: {
     color: "black",
     fontSize: 18,
-    marginTop: 15,
+    marginTop: 35,
     marginBottom: 10,
   },
   tap: {
@@ -42,5 +42,8 @@ const styles = StyleSheet.create({
   logOut:{
     position: "absolute",
     bottom: 10,
+  },
+  usernameText: {
+color: "#199DFC"
   }
 });

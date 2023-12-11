@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   stop: {
-    marginTop: 15,
+    marginBottom: 10,
   },
 });
 
